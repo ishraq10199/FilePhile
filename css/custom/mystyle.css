@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Blackjack";
+  src: url("../../fonts/blackjack.woff");
+}
+.text-blue-50 {
+  color: blueviolet;
+}
+.stylized-brand {
+  font-family: "Blackjack";
+  font-style: bold;
+  font-size: 2.5rem;
+  padding: -400px;
+  margin-top: 0px;
+  margin-bottom: -5px;
+}
+
+.placeholder-boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-in-placeholder-boxes {
+  text-align: center;
+  border: solid grey;
+  padding: 1rem;
+  /* margin: 0.25rem; */
+  /* margin-right: 5rem; */
+  margin-bottom: 1rem;
+  background-color: aquamarine;
+}
