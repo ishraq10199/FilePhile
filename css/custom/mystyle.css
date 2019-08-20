@@ -28,3 +28,9 @@
   margin-bottom: 1rem;
   background-color: aquamarine;
 }
+
+.ricardo {
+  width: calc(100%);
+  position: relative;
+  top: 50%;
+}
