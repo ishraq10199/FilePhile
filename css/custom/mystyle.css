@@ -29,7 +29,23 @@
   background-color: aquamarine;
 }
 
-.ricardo {
+.full-vid {
   width: calc(100%);
   height: calc(100%);
+}
+
+.list-item {
+  margin-top: 5rem;
+}
+
+.sign-in-button {
+  background: green;
+  min-width: 6rem;
+  max-width: 8rem;
+  min-height: 3rem;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 2px 2px black;
 }
