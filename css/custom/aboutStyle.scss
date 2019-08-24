@@ -1,0 +1,30 @@
+.about-box {
+  margin: 3vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .about-text {
+    margin: auto;
+    padding: 2%;
+    text-shadow: -1px 2px rgb(24, 24, 24);
+    font-size: 1.05em;
+  }
+  .about-picture {
+    width: 300px;
+    padding: 2%;
+    position: relative;
+    margin: auto;
+    float: right;
+  }
+}
+
+.about-card {
+  background: linear-gradient(45deg, rgb(68, 118, 255), rgb(120, 0, 131));
+  padding: 3%;
+  border-radius: 5px;
+  box-shadow: 6px 6px rgb(46, 43, 43);
+  color: white;
+  display: flex;
+  flex-direction: row;
+}

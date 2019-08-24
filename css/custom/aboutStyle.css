@@ -1,0 +1,44 @@
+.about-box {
+  margin: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-box .about-text {
+  margin: auto;
+  padding: 2%;
+  text-shadow: -1px 2px #181818;
+  font-size: 1.05em;
+}
+
+.about-box .about-picture {
+  width: 300px;
+  padding: 2%;
+  position: relative;
+  margin: auto;
+  float: right;
+}
+
+.about-card {
+  background: linear-gradient(45deg, #4476ff, #780083);
+  padding: 3%;
+  border-radius: 5px;
+  -webkit-box-shadow: 6px 6px #2e2b2b;
+          box-shadow: 6px 6px #2e2b2b;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+/*# sourceMappingURL=aboutStyle.css.map */
