@@ -1,3 +1,40 @@
-body {
-  background: greenyellow;
+.sign-in-card {
+  height: 45rem;
+  padding: 5rem;
+  margin: auto;
+  transform: translateY(10%);
+  border-radius: 20px;
+  box-shadow: 5px 5px rgb(37, 37, 37);
+  background: linear-gradient(-45deg, #ffffff, #e0e0e0);
+  text-align: center;
+  min-width: 300px;
+}
+
+.parent {
+  padding: 4rem;
+  margin: auto;
+  margin-top: -4rem;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+input {
+  width: 100%;
+}
+
+.sign-in-form form {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  border-radius: 50px;
+}
+
+.checkBox {
+}
+
+.text-input {
+  margin-bottom: 1rem;
+  border-radius: 30px;
+  border: 2px solid white;
+  box-shadow: 2px 2px black;
 }

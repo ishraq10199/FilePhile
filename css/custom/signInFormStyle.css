@@ -1,4 +1,38 @@
-body {
-  background: greenyellow;
+.sign-in-card {
+  height: 45rem;
+  padding: 5rem;
+  margin: auto;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px #252525;
+          box-shadow: 5px 5px #252525;
+  background: linear-gradient(-45deg, #ffffff, #e0e0e0);
+  text-align: center;
+  min-width: 300px;
+}
+
+.parent {
+  padding: 4rem;
+  margin: auto;
+  margin-top: -4rem;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+input {
+  width: 100%;
+}
+
+.sign-in-form form {
+  border-radius: 50px;
+}
+
+.text-input {
+  margin-bottom: 1rem;
+  border-radius: 30px;
+  border: 2px solid white;
+  -webkit-box-shadow: 2px 2px black;
+          box-shadow: 2px 2px black;
 }
 /*# sourceMappingURL=signInFormStyle.css.map */

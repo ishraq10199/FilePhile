@@ -15,10 +15,11 @@
     <script src="./js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="css/custom/mystyle.css" />
+    <link rel="stylesheet" href="css/custom/logoStyle.css" />
     <title>FilePhile</title>
   </head>
 
-  <body>
+  <body id="welcomePage">
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
       <a class="navbar-brand stylized-brand" href="index.html">FilePhile</a>
       <button
@@ -30,7 +31,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="margin-top:.5em;">
           <li class="nav-item">
             <a class="nav-link" href="#">Home</a>
           </li>
@@ -47,8 +48,85 @@
           >
             Sign in
           </button>
+          <button 
+            onclick="window.location.href='./pages/signUp.html'" 
+            class="btn-dark nav-item sign-in-button" 
+            style="background: rgb(67, 34, 187)"
+            type="button">
+            Sign up
+          </button>
         </ul>
       </div>
     </nav>
+    <div class="container-fluid banner">
+      <h3 id="Welcome">Welcome to</h3>
+      <h1 class="stylized-brand-white">FilePhile</h1>
+    </div>
+    <br />
+    <br />
+    <div class="container welcomeMessage">
+      <h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus
+        delectus officiis at placeat laborum veritatis, obcaecati ad quibusdam
+        exercitationem harum eos. Nostrum hic cumque corporis tempora officiis,
+        iure enim.
+      </h3>
+    </div>
+    <div class="container welcomeMessage">
+      <h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusamus
+        delectus officiis at placeat laborum veritatis, obcaecati ad quibusdam
+        exercitationem harum eos. Nostrum hic cumque corporis tempora officiis,
+        iure enim.
+      </h4>
+    </div>
+    <div class="container">
+      <img 
+        class="unDraw"
+        src="./images/undraw_programmer_imem.png"
+      >
+    </div>
+    <br>
+    <footer class="footer-bs">
+      <div class="row">
+        <div class="col-md-3 footer-brand animated fadeInLeft">
+          <h2 class="stylized-brand-white" style="font-size: 200%; margin: 0; text-align: left">FilePhile</h2>
+          <p>An Open Source initiative</p>
+        </div>
+        <div class="col-md-4 footer-nav animated fadeInUp">
+          <h4 style="text-align: center"> -(links)- </h4>
+          <div class="col-md-6">
+            <ul class="pages">
+              <li><a href="#">Github repo</a></li>
+              
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list">
+              <li><a href="./pages/about.html">About</a></li>
+              <li><a href="./pages/contactUs.html">Contact us</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 footer-social animated fadeInDown">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-ns animated fadeInRight">
+          <p>Quote of the week:</p>
+          <p>"Appear strong when you are weak, appear weak when you are strong"
+            <br>
+            <br>
+            -Sun Tzu
+          </p>
+          
+        </div>
+      </div>
+    </footer>
+    
   </body>
 </html>

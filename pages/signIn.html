@@ -16,13 +16,76 @@
 
     <link rel="stylesheet" href="../css/custom/mystyle.css" />
     <link rel="stylesheet" href="../css/custom/animations.css" />
-    <link rel="stylesheet" href="../css/custom/signInFormStyle.css" />
+    <link rel="stylesheet" href="../css/custom/mystyle.css" />
+    <!-- IMPORTED -->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../fonts/Linearicons-Free-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/animate/animate.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/css-hamburgers/hamburgers.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/animsition/css/animsition.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/select2/select2.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../vendor/daterangepicker/daterangepicker.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../css/util.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <!-- /IMPORTED -->
     <title>Sign-in</title>
   </head>
 
-  <body style="">
+  <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-      <a class="navbar-brand stylized-brand" href="../index.html">FilePhile</a>
+      <a
+        class="navbar-brand stylized-brand-white"
+        style="font-style: bold;
+              font-size: 2.5rem;
+              padding: -400px;
+              margin-top: 0px;
+              margin-bottom: -5px;"
+        href="../index.html"
+        >FilePhile</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -32,7 +95,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto" style="margin-top:.5em;">
           <li class="nav-item">
             <a class="nav-link" href="../index.html">Home</a>
           </li>
@@ -44,27 +107,104 @@
           </li>
           <button
             onclick="window.location.href='./signIn.html'"
-            class="btn-dark nav-item sign-in-button"
+            class="btn nav-item sign-in-button"
+            style="color: white;margin-top:-.5em;"
             type="button"
           >
             Sign in
+          </button>
+          <button
+            onclick="window.location.href='./signUp.html'"
+            class="btn-dark nav-item sign-in-button"
+            style="background: rgb(67, 34, 187); margin-top:-.5em; margin-left: .25em;"
+            type="button"
+          >
+            Sign up
           </button>
         </ul>
       </div>
     </nav>
     <!-- START -->
-    <div
-      class="container slideFromLeft-target"
-      style="box-shadow:3px 3px black; background:darkseagreen; padding:5%;margin-top: 5%;"
-    >
-      <h1>_TODO_</h1>
-      <ul>
-        <li>Sign in form</li>
-        <li>Sign in card</li>
-        <li>Register form</li>
-        <li>File display</li>
-        <li>File upload form</li>
-      </ul>
+    <div class="limiter">
+      <div class="container-login100">
+        <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+          <form class="login100-form validate-form flex-sb flex-w">
+            <span class="login100-form-title p-b-32">
+              Account Login
+            </span>
+
+            <span class="txt1 p-b-11">
+              Username
+            </span>
+            <div
+              class="wrap-input100 validate-input m-b-36"
+              data-validate="Username is required"
+            >
+              <input class="input100" type="text" name="username" />
+              <span class="focus-input100"></span>
+            </div>
+
+            <span class="txt1 p-b-11">
+              Password
+            </span>
+            <div
+              class="wrap-input100 validate-input m-b-12"
+              data-validate="Password is required"
+            >
+              <span class="btn-show-pass">
+                <i class="fa fa-eye"></i>
+              </span>
+              <input class="input100" type="password" name="pass" />
+              <span class="focus-input100"></span>
+            </div>
+
+            <div class="flex-sb-m w-full p-b-48">
+              <div class="contact100-form-checkbox">
+                <input
+                  class="input-checkbox100"
+                  id="ckb1"
+                  type="checkbox"
+                  name="remember-me"
+                />
+                <label class="label-checkbox100" for="ckb1">
+                  Remember me
+                </label>
+              </div>
+
+              <div>
+                <a href="#" class="txt3">
+                  Forgot Password?
+                </a>
+              </div>
+            </div>
+
+            <div class="container-login100-form-btn">
+              <button class="login100-form-btn">
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/bootstrap/js/popper.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/daterangepicker/moment.min.js"></script>
+    <script src="../vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="../vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="../js/main.js"></script>
   </body>
 </html>
