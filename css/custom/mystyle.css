@@ -2,6 +2,29 @@
   font-family: "Blackjack";
   src: url("../../fonts/blackjack.woff");
 }
+
+/* >>>>>>//DEBUG MODE START// */
+/* * {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+* * {
+  background-color: rgba(0, 255, 0, 0.2);
+}
+* * * {
+  background-color: rgba(0, 0, 255, 0.2);
+}
+* * * * {
+  background-color: rgba(255, 0, 255, 0.2);
+}
+* * * * * {
+  background-color: rgba(0, 255, 255, 0.2);
+}
+* * * * * * {
+  background-color: rgba(255, 255, 0, 0.2);
+} */
+
+/* >>>>>>//DEBUG MODE END// */
+
 .text-blue-50 {
   color: blueviolet;
 }
