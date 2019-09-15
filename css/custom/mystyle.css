@@ -241,3 +241,9 @@
     border-left: solid 1px rgba(255, 255, 255, 0.1);
   }
 }
+
+#contactBox {
+  width: 100%;
+  padding: 5rem;
+  font-size: 1.5rem;
+}

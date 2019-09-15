@@ -64,7 +64,7 @@
         <h1 class="font-weight-light text-white">Contact us</h1>
       </div>
     </header>
-    <div class="container">
+    <div class="container" id="myPictures">
       <div class="row">
         <!-- Team Member 1 -->
         <div class="col-xl-3 col-md-6 mb-4 slideFromLeft-target">
@@ -145,5 +145,132 @@
       </div>
       <!-- /.row -->
     </div>
+    <!-- Initially hidden contact form -->
+
+    <div
+      class="row justify-content-center"
+      id="contactBox"
+      style="display:none;"
+    >
+      <!--Grid column-->
+      <div class="col-md-9">
+        <form
+          id="contact-form"
+          name="contact-form"
+          action="mail.php"
+          method="POST"
+        >
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-6">
+              <div class="md-form">
+                <input type="text" id="name" name="name" class="form-control" />
+                <label for="name" class="">Your name</label>
+              </div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-6">
+              <div class="md-form">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                />
+                <label for="email" class="">Your email</label>
+              </div>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="md-form">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                />
+                <label for="subject" class="">Subject</label>
+              </div>
+            </div>
+          </div>
+          <!--Grid row-->
+
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-12">
+              <div class="md-form">
+                <textarea
+                  type="text"
+                  id="message"
+                  name="message"
+                  rows="2"
+                  class="form-control md-textarea"
+                ></textarea>
+                <label for="message">Your message</label>
+              </div>
+            </div>
+          </div>
+          <!--Grid row-->
+          <br />
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-md-6">
+              <div class="md-form">
+                <button
+                  type="submit"
+                  id="btn2"
+                  class="btn-dark btn-primary"
+                  style="border-radius:50px; padding-left: 3rem;padding-right: 3rem; padding-top:1rem; padding-bottom:.75rem"
+                >
+                  <h4 id="btext2">Submit</h4>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div style="padding-top:2rem;">
+          <button
+            onclick="goBack()"
+            id="btn3"
+            class="btn-dark btn-secondary"
+            style="border-radius:50px; padding-left: 3rem;padding-right: 3rem; padding-top:1rem; padding-bottom:.75rem"
+          >
+            <h4 id="btext3">Go back</h4>
+          </button>
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+
+      <!--Grid column-->
+    </div>
+
+    <!-- Buttons go here -->
+    <div class="container d-flex flex-row justify-content-center">
+      <div class="flex-column">
+        <button
+          onclick="saySomething()"
+          id="btn1"
+          class="btn-dark btn-primary"
+          style="border-radius:50px; padding-left: 3rem;padding-right: 3rem; padding-top:1rem; padding-bottom:.75rem"
+        >
+          <h4 id="btext1">Say something</h4>
+        </button>
+
+        <br />
+        <br />
+      </div>
+    </div>
   </body>
+  <script src="../js/contactPage.js"></script>
 </html>
