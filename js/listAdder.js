@@ -95,7 +95,7 @@ var loadFile = function(event) {
       var prev = document.createElement("a");
       prev.setAttribute("href", previewURL[i]);
       prev.innerHTML = "Preview";
-      prev.setAttribute("class", "ml-auto");
+      prev.setAttribute("class", "ml-auto mt-auto");
       prev.style.paddingRight = "15px";
       prev.style.paddingBottom = "10px";
       prev.style.marginBottom = "0";

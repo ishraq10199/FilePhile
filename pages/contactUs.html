@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -154,12 +155,7 @@
     >
       <!--Grid column-->
       <div class="col-md-9">
-        <form
-          id="contact-form"
-          name="contact-form"
-          action="mail.php"
-          method="POST"
-        >
+        <form id="contactForm" name="contact-form" action="">
           <!--Grid row-->
           <div class="row">
             <!--Grid column-->
@@ -247,6 +243,17 @@
             <h4 id="btext3">Go back</h4>
           </button>
         </div>
+      </div>
+      <br /><br />
+      <div
+        class="alert alert-success"
+        id="successMessage"
+        role="alert"
+        style="display: none"
+      >
+        <h5 style="text-align: center">
+          YOUR MESSAGE HAS BEEN SENT. THANK YOU FOR YOUR VALUABLE FEEDBACK
+        </h5>
       </div>
       <!--Grid column-->
 
