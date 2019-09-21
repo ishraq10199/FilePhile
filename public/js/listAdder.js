@@ -51,6 +51,7 @@ var loadFile = function(event) {
   reader.onload = function() {
     var cardList = document.getElementById("cardList");
     for (var i = 0; i < event.target.files.length; i++) {
+      // console.log(event.target.files[i].path);
       var output = [];
       var previewURL = [];
       output[i] = document.createElement("div");

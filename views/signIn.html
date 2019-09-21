@@ -10,66 +10,62 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <script src="/js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/popper.min.js"></script>
 
-    <link rel="stylesheet" href="../css/custom/mystyle.css" />
-    <link rel="stylesheet" href="../css/custom/animations.css" />
-    <link rel="stylesheet" href="../css/custom/mystyle.css" />
+    <link rel="stylesheet" href="css/custom/mystyle.css" />
+    <link rel="stylesheet" href="css/custom/animations.css" />
+    <link rel="stylesheet" href="css/custom/mystyle.css" />
     <!-- IMPORTED -->
     <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="../vendor/bootstrap/css/bootstrap.min.css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="../fonts/Linearicons-Free-v1.0.0/icon-font.min.css"
+      href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css"
+    />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/css-hamburgers/hamburgers.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="../vendor/animate/animate.css"
+      href="vendor/animsition/css/animsition.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="../vendor/css-hamburgers/hamburgers.min.css"
+      href="vendor/select2/select2.min.css"
     />
     <!--===============================================================================================-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="../vendor/animsition/css/animsition.min.css"
+      href="vendor/daterangepicker/daterangepicker.css"
     />
     <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../vendor/select2/select2.min.css"
-    />
-    <!--===============================================================================================-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../vendor/daterangepicker/daterangepicker.css"
-    />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="../css/util.css" />
-    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
     <!-- /IMPORTED -->
     <title>Sign-in</title>
   </head>
@@ -83,7 +79,7 @@
               padding: -400px;
               margin-top: 0px;
               margin-bottom: -5px;"
-        href="../index.html"
+        href="/"
         >FilePhile</a
       >
       <button
@@ -97,17 +93,17 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto" style="margin-top:.5em;">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contactUs.html">Contact us</a>
+            <a class="nav-link" href="/contact">Contact us</a>
           </li>
 
           <button
-            onclick="window.location.href='./signUp.html'"
+            onclick="window.location.href='/sign-up'"
             class="btn-dark nav-item sign-in-button"
             style="background: rgb(67, 34, 187);"
             type="button"
@@ -147,9 +143,6 @@
               class="wrap-input100 validate-input m-b-12"
               data-validate="Password is required"
             >
-              <span class="btn-show-pass">
-                <i class="fa fa-eye"></i>
-              </span>
               <input
                 id="password"
                 class="input100"
@@ -197,24 +190,24 @@
     </button>
 
     <!--===============================================================================================-->
-    <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../vendor/animsition/js/animsition.min.js"></script>
+    <script src="vendor/animsition/js/animsition.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../vendor/bootstrap/js/popper.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../vendor/select2/select2.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../vendor/daterangepicker/moment.min.js"></script>
-    <script src="../vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
     <!--===============================================================================================-->
-    <script src="../vendor/countdowntime/countdowntime.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
     ><!--===============================================================================================-->
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
