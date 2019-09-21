@@ -1,94 +1,62 @@
-function gotoDemo() {
-  window.location.href = "../Admin/fileUploadSimple.html";
-}
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyDAShOjyS8OUGzj3o02K7MTigzXVoIW9WE",
+  authDomain: "filephile-f6b68.firebaseapp.com",
+  databaseURL: "https://filephile-f6b68.firebaseio.com",
+  projectId: "filephile-f6b68",
+  storageBucket: "filephile-f6b68.appspot.com",
+  messagingSenderId: "1036404157575",
+  appId: "1:1036404157575:web:968283e831e79293fedc22"
+};
+firebase.initializeApp(firebaseConfig);
 
-(function($) {
-  "use strict";
+const auth = firebase.auth();
+const db = firebase.firestore();
 
-  /*==================================================================
-    [ Validate ]*/
-  var input = $(".validate-input .input100");
+auth.onAuthStateChanged(user => {
+  if (user) {
+    console.log("User logged in: ", user.email);
+  } else {
+    console.log("USER HAS NOT YET LOGGED IN");
+  }
+});
+// function gotoDemo() {
+//   window.location.href = "../Admin/fileUploadSimple.html";
+// }
 
-  $(".validate-form").on("submit", function() {
-    var check = true;
+const signInForm = document.querySelector("#signInForm");
+if (signInForm != null) {
+  signInForm.addEventListener("submit", event => {
+    event.preventDefault();
+    const email = signInForm["email"].value;
+    const password = signInForm["password"].value;
 
-    for (var i = 0; i < input.length; i++) {
-      if (validate(input[i]) == false) {
-        showValidate(input[i]);
-        check = false;
-      }
-    }
-
-    return check;
-  });
-
-  $(".validate-form .input100").each(function() {
-    $(this).focus(function() {
-      hideValidate(this);
+    auth.signInWithEmailAndPassword(email, password).then(cred => {
+      console.log(cred);
     });
   });
+}
 
-  function validate(input) {
-    if ($(input).attr("type") == "email" || $(input).attr("name") == "email") {
-      if (
-        $(input)
-          .val()
-          .trim()
-          .match(
-            /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/
-          ) == null
-      ) {
-        return false;
-      }
-    } else {
-      if (
-        $(input)
-          .val()
-          .trim() == ""
-      ) {
-        return false;
-      }
-    }
-  }
+const signUpForm = document.querySelector("#signUpForm");
+if (signUpForm != null) {
+  signUpForm.addEventListener("submit", event => {
+    event.preventDefault();
 
-  function showValidate(input) {
-    var thisAlert = $(input).parent();
+    const username = signUpForm["username"].value;
+    const email = signUpForm["email"].value;
+    const password = signUpForm["password"].value;
 
-    $(thisAlert).addClass("alert-validate");
-  }
-
-  function hideValidate(input) {
-    var thisAlert = $(input).parent();
-
-    $(thisAlert).removeClass("alert-validate");
-  }
-
-  /*==================================================================
-    [ Show pass ]*/
-  var showPass = 0;
-  $(".btn-show-pass").on("click", function() {
-    if (showPass == 0) {
-      $(this)
-        .next("input")
-        .attr("type", "text");
-      $(this)
-        .find("i")
-        .removeClass("fa-eye");
-      $(this)
-        .find("i")
-        .addClass("fa-eye-slash");
-      showPass = 1;
-    } else {
-      $(this)
-        .next("input")
-        .attr("type", "password");
-      $(this)
-        .find("i")
-        .removeClass("fa-eye-slash");
-      $(this)
-        .find("i")
-        .addClass("fa-eye");
-      showPass = 0;
-    }
+    auth.createUserWithEmailAndPassword(email, password).then(cred => {
+      console.log(cred);
+      signUpForm.reset();
+    });
   });
-})(jQuery);
+}
+
+const logoutButton = document.getElementById("logout");
+if (logoutButton != null) {
+  logoutButton.addEventListener("click", event => {
+    event.preventDefault();
+    auth.signOut();
+  });
+}
