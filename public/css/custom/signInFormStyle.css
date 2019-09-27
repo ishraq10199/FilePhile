@@ -35,4 +35,8 @@ input {
   -webkit-box-shadow: 2px 2px black;
           box-shadow: 2px 2px black;
 }
+
+.nav-link {
+  font-size: 1.1rem !important;
+}
 /*# sourceMappingURL=signInFormStyle.css.map */

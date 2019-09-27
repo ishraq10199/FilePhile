@@ -1,12 +1,16 @@
 auth.onAuthStateChanged(user => {
   if (user) {
     console.log("User logged in: ", user.email);
+    window.location.href = "/admin-panel";
   } else {
-    console.log("USER HAS NOT YET LOGGED IN");
+    console.log("User not logged in!");
   }
 });
 function gotoDemo() {
   window.location.href = "/admin-panel";
+}
+function gotoHome() {
+  window.location.href = "/";
 }
 
 const signInForm = document.querySelector("#signInForm");
@@ -35,13 +39,5 @@ if (signUpForm != null) {
       console.log(cred);
       signUpForm.reset();
     });
-  });
-}
-
-const logoutButton = document.getElementById("logout");
-if (logoutButton != null) {
-  logoutButton.addEventListener("click", event => {
-    event.preventDefault();
-    auth.signOut();
   });
 }

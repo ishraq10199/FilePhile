@@ -25,6 +25,10 @@
 
 /* >>>>>>//DEBUG MODE END// */
 
+a {
+  font-size: 1.1rem;
+}
+
 .text-blue-50 {
   color: blueviolet;
 }

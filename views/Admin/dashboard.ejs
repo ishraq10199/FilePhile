@@ -16,7 +16,11 @@
     <script src="js/popper.min.js"></script>
 
     <link rel="stylesheet" href="css/custom/mystyle.css" />
+    <link rel="stylesheet" href="css/custom/fileUploaderStylesheet.css" />
+
     <link rel="stylesheet" href="css/custom/animations.css" />
+    <link rel="stylesheet" href="css/custom/aboutStyle.css" />
+
     <title>Dashboard</title>
   </head>
 
@@ -34,13 +38,13 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/"">Home</a>
+            <a class="nav-link" href="/admin-panel">My Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
+            <a class="nav-link" href="/file-storage">Cloud Files</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact us</a>
+            <a class="nav-link" href="/upload">Upload</a>
           </li>
 
           <button
@@ -65,13 +69,12 @@
     </nav>
 
     <!-- File list -->
-    <div id="listOfFiles">
-        
-    </div>
+    <div id="listOfFiles"></div>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
     <script src="js/firebase.js"></script>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/adminPanel.js"></script>
   </body>
 </html>
