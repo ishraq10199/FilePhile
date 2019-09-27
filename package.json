@@ -1,0 +1,22 @@
+{
+  "name": "filephile",
+  "version": "1.0.0",
+  "description": "2-2 project webdev",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishraq10199/FilePhile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ishraq10199/FilePhile/issues"
+  },
+  "homepage": "https://github.com/ishraq10199/FilePhile#readme",
+  "dependencies": {
+    "ejs": "^2.7.1"
+  }
+}
