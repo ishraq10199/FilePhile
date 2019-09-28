@@ -43,7 +43,6 @@ function getoutput(event) {
   for (var i = 0; i < event.target.files.length; i++) {
     fileDataArray[i] = handleParsing(event.target.files[i]);
   }
-  return fileDataArray;
 }
 
 var loadFile = function(event) {

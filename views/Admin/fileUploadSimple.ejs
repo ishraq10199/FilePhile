@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="css/custom/mystyle.css" />
+    <link rel="stylesheet" href="css/custom/animations.css" />
+    <link rel="stylesheet" href="css/custom/fileUploaderStylesheet.css" />
+    <link rel="stylesheet" href="css/custom/aboutStyle.css" />
+    <title>Upload files</title>
+  </head>
 
-  <link rel="stylesheet" href="css/custom/mystyle.css" />
-  <link rel="stylesheet" href="css/custom/animations.css" />
-  <link rel="stylesheet" href="css/custom/fileUploaderStylesheet.css">
-  <link rel="stylesheet" href="css/custom/aboutStyle.css">
-  <title>Upload files</title>
-</head>
-
-<body style="background: rgb(29, 29, 41);">
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a class="navbar-brand stylized-brand" href="/">FilePhile</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/admin-panel"">My Dashboard</a>
+  <body style="background: rgb(29, 29, 41);">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand stylized-brand" href="/">FilePhile</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/admin-panel">My Dashboard</a>
           </li>
           <li class=" nav-item">
             <a class="nav-link" href="/file-storage">Cloud Files</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/upload">Upload</a>
-        </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/upload">Upload</a>
+          </li>
 
-        <button id="logout" class="btn-dark nav-item sign-in-button" style="background: rgb(255, 126, 126);"
-          type="button">
-          Logout
-        </button>
-        <button style="display:none" id="signUpForm" class="btn-dark nav-item sign-in-button"
-          style="background: rgb(255, 126, 126);" type="button">
-          Sign-up
-        </button>
-      </ul>
-    </div>
-  </nav>
+          <button
+            id="logout"
+            class="btn-dark nav-item sign-in-button"
+            style="background: rgb(255, 126, 126);"
+            type="button"
+          >
+            Logout
+          </button>
+          <button
+            style="display:none"
+            id="signUpForm"
+            class="btn-dark nav-item sign-in-button"
+            style="background: rgb(255, 126, 126);"
+            type="button"
+          >
+            Sign-up
+          </button>
+        </ul>
+      </div>
+    </nav>
+
+    <%= typeof msg != 'undefined' ? msg : '' %>
 
     <div class="container-fluid">
       <h1 class="jumbotron-fluid text-center" style="padding:2rem;">
@@ -62,13 +81,11 @@
     </div>
     <br />
 
-</form> -->
-
     <form
       class="box"
       id="myForm2"
       method="post"
-      action="./success.html"
+      action="/upload-file"
       enctype="multipart/form-data"
     >
       <div class="box__input">
@@ -82,10 +99,7 @@
         />
         <label for="file"><strong>Choose a file</strong></label>
         <button class="box__button" type="submit">Upload</button>
-        <button
-          class="box__button"
-          onclick="window.location.href='/'"
-        >
+        <button class="box__button" onclick="window.location.href='/'">
           Go back
         </button>
       </div>
@@ -97,5 +111,5 @@
   <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
   <script src="js/firebase.js"></script>
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
 </html>
