@@ -1,9 +1,6 @@
 # FilePhile
 2-2 project webdev
 
-[Github pages link(NOT APPLICABLE ANYMORE)](https://ishraq10199.github.io/FilePhile)
-
-
 
 #Installation:
 1. Clone repo or download zip
